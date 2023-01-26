@@ -1,15 +1,15 @@
 ---
 # Manifest file downloaded from fusion
-externalId: tr-asset-sample
-name: create_asset_sample
+externalId: tr-ts_assets_mapping_ui
+name: ts_assets_mapping_ui
 query:
     file: transformation.sql
 destination:
-    type: asset_hierarchy
+    type: timeseries
 ignoreNullFields: true
 shared: true
-action: upsert
-dataSetExternalId: src:all
+action: update
+dataSetExternalId: uc:001:oee:ds
 # Specify credentials separately like this:
 # authentication:
 #   read:
@@ -43,7 +43,6 @@ dataSetExternalId: src:all
 #    - ${SCOPES}
 #   # Optional: If idP requires providing the audience
 #   audience: ${AUDIENCE}
-
 authentication:
     clientId: ${COGNITE_CLIENT_ID}
     clientSecret: ${COGNITE_CLIENT_SECRET}
