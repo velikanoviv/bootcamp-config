@@ -1,7 +1,7 @@
 ---
 # Manifest file downloaded from fusion
-externalId: tr-create_asset_hierarchy_ui
-name: create_asset_hierarchy_ui
+externalId: tr-create_asset_hierarchy
+name: create_asset_hierarchy
 query:
     file: transformation.sql
 destination:
@@ -10,7 +10,7 @@ ignoreNullFields: true
 shared: true
 action: upsert
 dataSetExternalId: src:001:sap:ds
-# Specify credentials separately like this:
+# #Specify credentials separately like this:
 # authentication:
 #   read:
 #     clientId: ${READ_CLIENT_ID}
